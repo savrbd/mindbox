@@ -24,7 +24,6 @@ const Main = () => {
         setData(cc)
       }
       const handleTodoCompleted = (params) => {
-        console.log(params)
         const newTodos=[...todos];
         const elementIndex= todos.findIndex((el)=>el==params)
         newTodos[elementIndex]={...params, active:!params.active}
